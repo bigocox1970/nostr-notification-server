@@ -31,7 +31,6 @@ ENV RUST_LOG=info
 # Expose HTTP port
 EXPOSE 3030
 
-# Mount points for persistent data
-VOLUME ["/app/db", "/app/config"]
+# Railway will handle volumes - removed VOLUME directive
 
 CMD ["./nostr-notification-server"]

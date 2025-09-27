@@ -24,6 +24,9 @@ WORKDIR /app
 # Copy binary from builder
 COPY --from=builder /usr/src/app/target/release/nostr-notification-server .
 
+# Copy config files
+COPY config/ ./config/
+
 # Set environment variables
 ENV NNS_DB_PATH=/app/db
 ENV RUST_LOG=info

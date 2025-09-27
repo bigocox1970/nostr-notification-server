@@ -2,7 +2,7 @@
 http_port = 3030
 
 # Add base_url for external URL
-base_url = "http://0.0.0.0:3030"
+base_url = "http://82.31.146.131:3030"
 relays = [
     "wss://relay.damus.io",
     "wss://temp.iris.to",
